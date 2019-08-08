@@ -40,7 +40,7 @@ spec:
       name: nginx-test
     spec:
       containers:
-      - image: nginx:latest
+      - image: gd04cr-internal.wangsucloud.com/wgb-test1/nginx-test:v2
         imagePullPolicy: Always
         name: nginx-test
         resources:
@@ -53,6 +53,8 @@ spec:
         volumeMounts:
         - mountPath: /data/nginx-test/
           name: pvc-nginx-test
+        imagePullSecrets:
+        - name: secret-wangsu2
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
