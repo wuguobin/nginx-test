@@ -27,11 +27,6 @@ spec:
   selector:
     matchLabels:
       app: nginx-test
-  strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
   template:
     metadata:
       labels:
