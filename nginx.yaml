@@ -4,12 +4,11 @@ metadata:
   name: nginx-test
 spec:
   accessModes:
-   - ReadWriteOnce
+   - ReadWriteMany
   resources:
     requests:
-       storage: 10G  #TODO: specify the appropriate size to match pv in pool of ceph rbd
-  storageClassName: wangsucloud-standard
-
+       storage: 1G #TODO: specify the appropriate size to match pv in pool of nfs
+  storageClassName: wangsucloud-nfs
 ---
 
 apiVersion: apps/v1
