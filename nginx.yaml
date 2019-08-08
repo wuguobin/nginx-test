@@ -34,9 +34,9 @@ spec:
         ws_pod_deployment: nginx-test
       name: nginx-test
     spec:
-      containers:
       imagePullSecrets:
         - name: secret-wangsu2
+      containers:
       - image: gd04cr-internal.wangsucloud.com/wgb-test1/nginx-test:v2
         imagePullPolicy: Always
         name: nginx-test
