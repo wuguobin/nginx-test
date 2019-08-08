@@ -36,7 +36,7 @@ spec:
       imagePullSecrets:
         - name: secret-wangsu2
       containers:
-      - image: gd04cr-internal.wangsucloud.com/wgb-test1/nginx-test:v2
+      - image: gd04cr-internal.wangsucloud.com/wgb-test1/nginx-test:v1
         imagePullPolicy: Always
         name: nginx-test
         resources:
